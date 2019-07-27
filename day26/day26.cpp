@@ -7,7 +7,7 @@
 void remove_x_before_last(std::list<int> &l, int k)
 {
   auto it = l.begin();
-  std::advance(it, k);
+  std::advance(it, k + 1);
   auto it2 = l.begin();
 
   while (it != l.end())
@@ -31,7 +31,7 @@ int main(void)
 {
   std::list<int> l = {10, 20, 30, 40, 50, 60, 70, 80, 90};
   print_list(l);
-  remove_x_before_last(l, 2);
+  remove_x_before_last(l, 0);
   print_list(l);
   remove_x_before_last(l, 6);
   print_list(l);
