@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 '''
 Find the minimum number of coins required to make n cents.
 
